@@ -12,6 +12,8 @@ Esse repositório contém uma série de erros (e suas soluções) que você pode
 
 - Esse erro ocorre principalmente no Windows por conta de pastas que possuem espaços, pontos, acentos ou outros caracteres inválidos (ex: "Semana Omnistack" ou "C:\Users\João Pedro"). Para evitar esse erro, recomendamos que crie seu projeto na raíz do seu drive, por exemplo: "C:\SemanaOmnistack\".
 
+- Esse erro também pode ser encontrado caso você esteja utilizando a versão 12+ do NodeJs, nesse caso, basta fazer o *downgrade* para a versão 10.
+
 ### **Input is required, but Expo CLI is in non-interactive mode.**
 
 - Alguns terminais (git bash, por exemplo) podem bloquear a interatividade das CLIs. Inicie seu projeto com o comando: `expo init mobile --template blank`
