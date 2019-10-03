@@ -44,7 +44,7 @@ SpotSchema.virtual('thumbnail_url').get(function() {
 ```js
 {
   "expo": {
-    //... informações já presentes no seu arquivo
+    ...
     //adicione as linhas abaixo
     "androidStatusBar": {
       "barStyle": "dark-content",
