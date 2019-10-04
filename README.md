@@ -8,6 +8,17 @@ Esse repositório contém uma série de erros (e suas soluções) que você pode
 
 - Para mais informações sobre como instalar o `expo-cli` verifique [a documentação](https://docs.expo.io/versions/latest/introduction/installation/).
 
+### Como configurar o comando no Windows.
+
+- `Meu Computador > Propriedades > Configurações Avançadas do Sistema`
+- Agora abriu uma Janela `Propriedades do Sistema`, Vá na aba `Avançado > Variáveis do Ambiente`.
+- Abriu uma uma nova Janela `Variáveis do Embiente`, Procure em `Variáveis do sistema` uma Variável com nome Path.
+- Ao encontrar o `Path`, seleciona e edite e Adicione as seguinte linha:
+- `%USERPROFILE%\AppData\Roaming\npm`
+- `C:\Program Files (x86)\Yarn\bin\`
+
+%USERPROFILE%\AppData\Roaming\npm
+
 ### **Invalid Regular Expression**
 
 - Esse erro ocorre principalmente no Windows por conta de pastas que possuem espaços, pontos, acentos ou outros caracteres inválidos (ex: "Semana Omnistack" ou "C:\Users\João Pedro"). Para evitar esse erro, recomendamos que crie seu projeto na raíz do seu drive, por exemplo: "C:\SemanaOmnistack\".
