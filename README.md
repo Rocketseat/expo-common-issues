@@ -55,6 +55,7 @@ SpotSchema.virtual('thumbnail_url').get(function() {
   }
 }
 ```
+- Após este processo, pare o processo do Metro Bundler do Expo apertando Ctrl + C no terminal que está rodando, e **inicie novamente**.
 
 ### **KeyboardAvoidingView não funciona no Android**
 
