@@ -55,3 +55,7 @@ SpotSchema.virtual('thumbnail_url').get(function() {
   }
 }
 ```
+
+### **ENOSPC: System limit for number of file watchers reached**
+
+- Em dispositivos Linux, o sistema pode ter uma certa limitação para o uso do live reload, o que ocasiona esse erro quando o diretório de algum projeto com a função ativada possui muitos arquivos. Execute o comando `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc sysctl.conf && sudo sysctl -p` em seu terminal e o problema será resolvido.
