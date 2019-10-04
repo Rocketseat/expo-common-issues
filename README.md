@@ -55,3 +55,15 @@ SpotSchema.virtual('thumbnail_url').get(function() {
   }
 }
 ```
+
+### **KeyboardAvoidingView não funciona no Android**
+
+- Caso o componente **KeyboardAvoidingView** não tenha o comportamento esperado no _**Android**_, ajustar o _layout_ quando o teclado é exibido. Você pode tentar passar o parâmetro `behavior` como `null`, pois em dispositivos _Android_ ele se comportará melhor sem o `behavior`.
+
+```js
+import {KeyboardAvoidingView, Platform} from 'react-native';
+
+<KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : null} >
+  ... outros componentes ...
+</KeyboardAvoidingView>;
+```
