@@ -36,7 +36,7 @@ Esse repositório contém uma série de erros (e suas soluções) que você pode
 - Altere o seguinte campo no seu Model de Spot para mostrar seu IP ao invés de localhost:
 ```js
 SpotSchema.virtual('thumbnail_url').get(function() {
-  return `http://IP_DA_SUA_REDE:3333/files/${this.thumbnail}
+  return `http://IP_DA_SUA_REDE:3333/files/${this.thumbnail}`
 })
 ```
 
