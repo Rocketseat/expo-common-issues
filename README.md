@@ -68,3 +68,15 @@ import {KeyboardAvoidingView, Platform} from 'react-native';
   ... outros componentes ...
 </KeyboardAvoidingView>;
 ```
+
+### **Unable to resolve assets**
+
+- Após a actualização do SDK do expo as _**custom fonts**_  ou _**icons importados**_ da biblioteca `@expo/vector-icons` ocorre um erro marcando que o app não consegue resolver o path destes assets. Resolução: 
+
+```
+apagar a pasta node_modules.
+apagar package-lock.json (yarn.lock if you are using yarn instead of npm).
+run npm install.
+run expo start -c.
+```
+Ref: [github issue](https://github.com/expo/expo/issues/4956)
