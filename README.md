@@ -79,4 +79,4 @@ apagar package-lock.json (yarn.lock if you are using yarn instead of npm).
 run npm install.
 run expo start -c.
 ```
-Ref: [github issue](https://github.com/expo/expo/issues/4956)
+- Ref: [github issue](https://github.com/expo/expo/issues/4956)
