@@ -57,6 +57,10 @@ SpotSchema.virtual('thumbnail_url').get(function() {
 ```
 - Após este processo, pare o processo do Metro Bundler do Expo apertando Ctrl + C no terminal que está rodando, e **inicie novamente**.
 
+### **ENOSPC: System limit for number of file watchers reached**
+
+- Em dispositivos Linux, o sistema pode ter uma certa limitação para o uso do live reload, o que ocasiona esse erro quando o diretório de algum projeto com a função ativada possui muitos arquivos. Execute o comando `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc sysctl.conf && sudo sysctl -p` em seu terminal e o problema será resolvido.
+
 ### **KeyboardAvoidingView não funciona no Android**
 
 - Caso o componente **KeyboardAvoidingView** não tenha o comportamento esperado no _**Android**_, ajustar o _layout_ quando o teclado é exibido. Você pode tentar passar o parâmetro `behavior` como `null`, pois em dispositivos _Android_ ele se comportará melhor sem o `behavior`.
