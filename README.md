@@ -2,6 +2,19 @@
 
 Esse repositório contém uma série de erros (e suas soluções) que você pode ter com o Expo.
 
+## Issues
+
+  - [Expo command not found](#expo-command-not-found)
+  - [Invalid Regular Expression](#invalid-regular-expression)
+  - [Input is required, but Expo CLI is in non-interactive mode.](#input-is-required-but-expo-cli-is-in-non-interactive-mode)
+  - [Network response timed out](#network-response-timed-out)
+  - [The internet connection appears to be offline.](#the-internet-connection-appears-to-be-offline)
+  - [Imagens não aparecendo no dispositivo físico](#imagens-n%c3%a3o-aparecendo-no-dispositivo-f%c3%adsico)
+  - [Logo ou Texto aparecendo atrás das barra de status no Android](#logo-ou-texto-aparecendo-atr%c3%a1s-das-barra-de-status-no-android)
+  - [ENOSPC: System limit for number of file watchers reached](#enospc-system-limit-for-number-of-file-watchers-reached)
+  - [KeyboardAvoidingView não funciona no Android](#keyboardavoidingview-n%c3%a3o-funciona-no-android)
+
+
 ### **Expo command not found**
 
 - Verifique se você instalou o `expo-cli` e se foi configurado corretamente no seu `$PATH`.
