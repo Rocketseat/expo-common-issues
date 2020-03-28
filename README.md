@@ -13,7 +13,7 @@ Esse repositório contém uma série de erros (e suas soluções) que você pode
   - [Logo ou Texto aparecendo atrás das barra de status no Android](#logo-ou-texto-aparecendo-atr%c3%a1s-das-barra-de-status-no-android)
   - [ENOSPC: System limit for number of file watchers reached](#enospc-system-limit-for-number-of-file-watchers-reached)
   - [KeyboardAvoidingView não funciona no Android](#keyboardavoidingview-n%c3%a3o-funciona-no-android)
-
+  - [O arquivo não pode ser carregado](#o-arquivo-n%c3%a3o-pode-ser-carregado)
 
 ### **Expo command not found**
 
@@ -85,3 +85,9 @@ import {KeyboardAvoidingView, Platform} from 'react-native';
   ... outros componentes ...
 </KeyboardAvoidingView>;
 ```
+
+### **O arquivo não pode ser carregado**
+
+- Ao executar o script `expo -h`, o Porwershell pode restringir sua execução. Para resolver o problema, basta remover a restrição com o comando `set-executionpolicy bypass` e executar o script do expo novamente. O comando `get-executionpolicy` pode ser utilizado para saber qual o nível de restrição está sendo utilizado.
+
+- Para mais informações sobre as restrições, acesse a [documentação da microsoft](https://support.microsoft.com/pt-br/help/2411920/you-can-t-run-scripts-in-azure-active-directory-module-for-windows-pow)
