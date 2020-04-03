@@ -85,3 +85,11 @@ import {KeyboardAvoidingView, Platform} from 'react-native';
   ... outros componentes ...
 </KeyboardAvoidingView>;
 ```
+
+### **expo.ps1 não pode ser carregado**
+
+- No Windows ao executar expo init esse err ocorrerá caso o seu PowerShell não estiver habilitado para execução de scripts. Acesse o PowerShell como administrador e execute o comando abaixo para habilitar a execução.
+
+```terminal
+set-executionpolicy unrestricted 
+```
