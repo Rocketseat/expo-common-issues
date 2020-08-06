@@ -98,16 +98,16 @@ import { KeyboardAvoidingView, Platform } from 'react-native';
 
 > `+` expo -h <br> > `+ ~~~~` <br> > `+` CategoryInfo : ErrodeSegurança: (:) [], PSSecurityException <br> > `+` FullyQualifiedErrorId : UnauthorizedAccess <br>
 
-- Seguir os seguintes passos:
+- Siga os seguintes passos:
 
-1. No Microsoft PowerShell digitar `Get-ExecutionPolicy`. Irá aparecer <i>Restricted</i>
+1. No Microsoft PowerShell digitar `Get-ExecutionPolicy`. Irá aparecer *Restricted*
 2. Em seguida, digitar `Set-ExecutionPolicy Unrestricted`, apertar enter e digitar S para aceitar a alteração da política de execução
-3. Após feitos os passos anteriores, se digitar `Get-ExecutionPolicy` novamente, o terminal deverá mostrar <i>Unrestricted</i>
+3. Após feitos os passos anteriores, se digitar `Get-ExecutionPolicy` novamente, o terminal deverá mostrar *Unrestricted*
 
 - Feito os passos anteriores, seu PowerShell estará habilitado para executar comandos Expo.
 
 ### **O arquivo não pode ser carregado**
 
-- Ao executar o script `expo -h`, o Porwershell pode restringir sua execução. Para resolver o problema, basta remover a restrição com o comando `set-executionpolicy bypass` e executar o script do expo novamente. O comando `get-executionpolicy` pode ser utilizado para saber qual o nível de restrição está sendo utilizado.
+- Ao executar o script `expo -h`, o PowerShell pode restringir sua execução. Para resolver o problema, basta remover a restrição com o comando `Set-ExecutionPolicy Bypass` e executar o script do expo novamente. O comando `Get-ExecutionPolicy` pode ser utilizado para saber qual o nível de restrição está sendo utilizado.
 
 - Para mais informações sobre as restrições, acesse a [documentação da microsoft](https://support.microsoft.com/pt-br/help/2411920/you-can-t-run-scripts-in-azure-active-directory-module-for-windows-pow)
