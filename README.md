@@ -108,6 +108,6 @@ import { KeyboardAvoidingView, Platform } from 'react-native';
 
 ### **O arquivo não pode ser carregado**
 
-- Ao executar o script `expo -h`, o Porwershell pode restringir sua execução. Para resolver o problema, basta remover a restrição com o comando `set-executionpolicy bypass` e executar o script do expo novamente. O comando `get-executionpolicy` pode ser utilizado para saber qual o nível de restrição está sendo utilizado.
+- Ao executar o script `expo -h`, o Powershell pode restringir sua execução. Para resolver o problema, basta remover a restrição com o comando `set-executionpolicy bypass` e executar o script do expo novamente. O comando `get-executionpolicy` pode ser utilizado para saber qual o nível de restrição está sendo utilizado.
 
 - Para mais informações sobre as restrições, acesse a [documentação da microsoft](https://support.microsoft.com/pt-br/help/2411920/you-can-t-run-scripts-in-azure-active-directory-module-for-windows-pow)
