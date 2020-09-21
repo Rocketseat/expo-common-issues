@@ -18,8 +18,6 @@ Esse repositório contém uma série de erros (e suas soluções) que você pode
     - [**UnauthorizedAccess on run Expo command on Microsoft PowerShell**](#unauthorizedaccess-on-run-expo-command-on-microsoft-powershell)
     - [**O arquivo não pode ser carregado**](#o-arquivo-não-pode-ser-carregado)
     - [**Utilizando Expo com WSL2 sem tunelamento (Tunnel)**](#utilizando-expo-com-wsl2-sem-tunelamento-tunnel)
-      - [Manual](#manual)
-      - [Automático](#automático)
 
 ### **Expo command not found**
 
@@ -123,18 +121,18 @@ import { KeyboardAvoidingView, Platform } from 'react-native';
 
 - A configuração pode ser feita de duas maneiras, de forma **manual** ou **automática**!
 
-#### Manual
+**Modo Manual:**  
 
 Os passos para configuração são:  
 
-**1.** Abrir as portas necessárias **`(9000, 9001, 9002, 9003, etc)`** no firewall do Windows.
-**2.** Identificar o endereço IP do *Windows* e do *WSL2*.
-**3.** Redirecionar as portas entre *Windows* e *WSL2*.
-**4.** Configurar a variável de ambiente **`REACT_NATIVE_PACKAGER_HOSTNAME`** no *WSL2* para receber o endereço IP do *Windows*.
+**1.** Abrir as portas necessárias **`(9000, 9001, 9002, 9003, etc)`** no firewall do Windows.  
+**2.** Identificar o endereço IP do *Windows* e do *WSL2*.  
+**3.** Redirecionar as portas entre *Windows* e *WSL2*.  
+**4.** Configurar a variável de ambiente **`REACT_NATIVE_PACKAGER_HOSTNAME`** no *WSL2* para receber o endereço IP do *Windows*.  
 
-- **Porém há um problema onde parte desse procedimento deve ser feito a cada reinicialização do sistema. Com o intuito de automatizar todo esse processo e evitar esses processos manuais foi criado um script para lidar com toda a configuração.**
+- **Porém há um problema onde parte desse procedimento deve ser feito a cada reinicialização do sistema. Com o intuito de automatizar todo esse processo e evitar esses processos manuais foi criado um script para lidar com toda a configuração.**  
 
-#### Automático
+**Modo Automático:**  
 
 Para utilizar o script [wsl2_host](https://github.com/jonhoffmam/wsl2_host):
 
