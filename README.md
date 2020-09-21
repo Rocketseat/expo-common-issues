@@ -142,5 +142,5 @@ Para utilizar o script [wsl2_host](https://github.com/jonhoffmam/wsl2_host):
 
 **2.** Execute o arquivo **start.bat** na primeira execução do script.
 
-**Obs¹.:** A execução manual só é necessária na primeira execução, depois disso a cada logon o sistema irá executar automaticamente o script para configuração.
+**Obs¹.:** A execução manual só é necessária na primeira execução, depois disso a cada logon o sistema irá executar automaticamente o script para configuração.  
 **Obs².:** Posteriormente é possível executar o script com o comando **`wsl2host`** através do ***Executar*** `(Windows + "R")` caso necessário.
