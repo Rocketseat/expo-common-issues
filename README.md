@@ -4,20 +4,18 @@ Esse repositório contém uma série de erros (e suas soluções) que você pode
 
 ## Issues
 
-- [Expo common issues](#expo-common-issues)
-  - [Issues](#issues)
-    - [**Expo command not found**](#expo-command-not-found)
-    - [**Invalid Regular Expression**](#invalid-regular-expression)
-    - [**Input is required, but Expo CLI is in non-interactive mode.**](#input-is-required-but-expo-cli-is-in-non-interactive-mode)
-    - [**Network response timed out**](#network-response-timed-out)
-    - [**The internet connection appears to be offline.**](#the-internet-connection-appears-to-be-offline)
-    - [**Imagens não aparecendo no dispositivo físico**](#imagens-não-aparecendo-no-dispositivo-físico)
-    - [**Logo ou Texto aparecendo atrás das barra de status no Android**](#logo-ou-texto-aparecendo-atrás-das-barra-de-status-no-android)
-    - [**ENOSPC: System limit for number of file watchers reached**](#enospc-system-limit-for-number-of-file-watchers-reached)
-    - [**KeyboardAvoidingView não funciona no Android**](#keyboardavoidingview-não-funciona-no-android)
-    - [**UnauthorizedAccess on run Expo command on Microsoft PowerShell**](#unauthorizedaccess-on-run-expo-command-on-microsoft-powershell)
-    - [**O arquivo não pode ser carregado**](#o-arquivo-não-pode-ser-carregado)
-    - [**Utilizando Expo com WSL2 sem tunelamento (Tunnel)**](#utilizando-expo-com-wsl2-sem-tunelamento-tunnel)
+- [Expo command not found](#expo-command-not-found)
+- [Invalid Regular Expression](#invalid-regular-expression)
+- [Input is required, but Expo CLI is in non-interactive mode.](#input-is-required-but-expo-cli-is-in-non-interactive-mode)
+- [Network response timed out](#network-response-timed-out)
+- [The internet connection appears to be offline.](#the-internet-connection-appears-to-be-offline)
+- [Imagens não aparecendo no dispositivo físico](#imagens-n%c3%a3o-aparecendo-no-dispositivo-f%c3%adsico)
+- [Logo ou Texto aparecendo atrás das barra de status no Android](#logo-ou-texto-aparecendo-atr%c3%a1s-das-barra-de-status-no-android)
+- [ENOSPC: System limit for number of file watchers reached](#enospc-system-limit-for-number-of-file-watchers-reached)
+- [KeyboardAvoidingView não funciona no Android](#keyboardavoidingview-n%c3%a3o-funciona-no-android)
+- [UnauthorizedAccess on run Expo command on Microsoft PowerShell](#unauthorizedaccess-on-run-expo-command-on-microsoft-powershell)
+- [O arquivo não pode ser carregado](#o-arquivo-n%c3%a3o-pode-ser-carregado)
+- [Utilizando Expo com WSL2 sem tunelamento (Tunnel)](#utilizando-expo-com-wsl2-sem-tunelamento-tunnel)
 
 ### **Expo command not found**
 
