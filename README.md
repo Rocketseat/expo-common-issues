@@ -15,6 +15,7 @@ Esse repositório contém uma série de erros (e suas soluções) que você pode
 - [KeyboardAvoidingView não funciona no Android](#keyboardavoidingview-n%c3%a3o-funciona-no-android)
 - [UnauthorizedAccess on run Expo command on Microsoft PowerShell](#unauthorizedaccess-on-run-expo-command-on-microsoft-powershell)
 - [O arquivo não pode ser carregado](#o-arquivo-n%c3%a3o-pode-ser-carregado)
+- [Utilizando Expo com WSL2 sem tunelamento (Tunnel)](#utilizando-expo-com-wsl2-sem-tunelamento-tunnel)
 
 ### **Expo command not found**
 
@@ -111,3 +112,35 @@ import { KeyboardAvoidingView, Platform } from 'react-native';
 - Ao executar o script `expo -h`, o Porwershell pode restringir sua execução. Para resolver o problema, basta remover a restrição com o comando `set-executionpolicy bypass` e executar o script do expo novamente. O comando `get-executionpolicy` pode ser utilizado para saber qual o nível de restrição está sendo utilizado.
 
 - Para mais informações sobre as restrições, acesse a [documentação da microsoft](https://support.microsoft.com/pt-br/help/2411920/you-can-t-run-scripts-in-azure-active-directory-module-for-windows-pow)
+
+### **Utilizando Expo com WSL2 sem tunelamento (Tunnel)**
+
+- A utilização do Expo no ambiente de desenvolvimento ***Windows + WSL2*** pode ser problemática devido ao modo como o **WSL2** se comunica com o **Windows**. Ao iniciar o projeto e abrir o Expo DevTools é possível ver que é atriubído o endereço IP do WSL2 para acesso no modo **LAN**, não sendo possível a conexão entre o dispositivo móvel e o computador. Uma alternativa seria a conexão através do modo **Tunnel** (tunelamento), porém essa opção pode não ser a mais agradável devido ao fato de nessecitar de conexão com a internet tornando o download dos pacotes (Downloading JavaScript bundle) mais lento, principalmente em projetos um pouco maiores. Para contornar isso é necessário realizar o "direcionamento" para o endereço IP correto que no caso, basicamente, seria o endereço IP utilizado no Windows.  
+
+- A configuração pode ser feita de duas maneiras, de forma **manual** ou **automática**!
+
+**Modo Manual:**  
+
+Os passos para configuração são:  
+
+**1.** Abrir as portas necessárias **`(9000, 9001, 9002, 9003, etc)`** no firewall do Windows.  
+**2.** Identificar o endereço IP do *Windows* e do *WSL2*.  
+**3.** Redirecionar as portas entre *Windows* e *WSL2*.  
+**4.** Configurar a variável de ambiente **`REACT_NATIVE_PACKAGER_HOSTNAME`** no *WSL2* para receber o endereço IP do *Windows*.  
+
+- **Porém há um problema onde parte desse procedimento deve ser feito a cada reinicialização do sistema. Com o intuito de automatizar todo esse processo e evitar esses processos manuais foi criado um script para lidar com toda a configuração.**  
+
+**Modo Automático:**  
+
+Para utilizar o script [wsl2_host](https://github.com/jonhoffmam/wsl2_host):
+
+**1.** Faça uma cópia do repositório em sua máquina local:
+
+  ```sh
+  > git clone https://github.com/jonhoffmam/wsl2_host.git
+  ```
+
+**2.** Execute o arquivo **start.bat** na primeira execução do script.
+
+**Obs¹.:** A execução manual só é necessária na primeira execução, depois disso a cada logon o sistema irá executar automaticamente o script para configuração.  
+**Obs².:** Posteriormente é possível executar o script com o comando **`wsl2host`** através do ***Executar*** `(Windows + "R")` caso necessário.
